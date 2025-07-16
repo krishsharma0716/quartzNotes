@@ -101,7 +101,7 @@ export const ContentPage: QuartzEmitterPlugin<Partial<FullPageLayout>> = (userOp
       const allFiles = content.map((c) => c[1].data)
 
       // find all slugs that changed or were added
-      const changedSlugs = new Set<string>()
+      const changedSlugs = new Set<string>()œœ
       for (const changeEvent of changeEvents) {
         if (!changeEvent.file) continue
         if (changeEvent.type === "add" || changeEvent.type === "change") {
